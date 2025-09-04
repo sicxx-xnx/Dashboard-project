@@ -21,6 +21,9 @@ flex-direction: column;
 .sidebar {
 grid-area: 1 / 1 / span 2 / span 1;
 background-color: rgb(10, 108, 108);    
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: repeat(10,1fr);
 }
 .content-grid{
 background-color: lightgray;
@@ -95,3 +98,24 @@ background-color:rgb(10, 108, 108);
 color: white;
 padding: 3%;
 }
+.top-sidebar{
+grid-row: 1 / 2 ; 
+border: 1px red solid;  
+display: flex; 
+align-items: center;
+gap: 5%;
+}
+div img:first-of-type{
+width: 3rem;
+margin-left: 5%;    
+}
+.top-sidebar h2:first-of-type{
+font-size: 2rem;    
+}
+.middle-sidebar{
+grid-row: 3 /  span 3;
+display: flex;
+border: 1px red solid;
+align-items: center;    
+}
+
