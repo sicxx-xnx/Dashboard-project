@@ -3,3 +3,95 @@ margin: 0px;
 padding: 0px;
 box-sizing: border-box;    
 }
+.main-grid {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: 2fr 6fr;
+height: 100vh;
+}
+.header {
+grid-row-start: 1;
+grid-row-end: 2;
+grid-column-start: 2;
+grid-column-end: 7;    
+background-color: white;
+display: flex;
+flex-direction: column;
+}
+.sidebar {
+grid-area: 1 / 1 / span 2 / span 1;
+background-color: rgb(10, 108, 108);    
+}
+.content-grid{
+background-color: lightgray;
+display: grid;   
+grid-area: 2 / 2 / span 2 / span 6; 
+}
+form, .searchbar, .userinfo{
+display: flex;
+height: 50%;   
+align-items: center; 
+justify-content: space-between;
+padding: 15px;
+}
+form{
+width: 50%;    
+justify-content: flex-start;
+}
+input[type="text"] {
+width: 85%;    
+padding: 5px;
+margin: 5px;
+border-radius: 15px;
+background-color: lightgray;
+border-color: lightgray;
+height: 3vh;
+
+}
+.search-submit {
+/* padding: 15px; */
+background-color: rgba(255, 255, 255,0);
+border-color: rgba(255, 255, 255,0);
+}
+button > img {  
+height: 3vh;    
+}
+.icons {
+margin: 15px; 
+width: 45%; 
+display: flex;
+justify-content: end;
+align-items: center;  
+gap: 5px;
+}
+.gap{
+width: 3%;    
+}
+.icons > img {
+height: 5vh;
+}
+.icons > .account-icon{
+height: 7vh;
+border-radius: 50%;
+background-color: yellow;    
+}
+h3{
+font-size: 3vh;    
+}
+.account-icon-v2{
+height: 10vh;
+border-radius: 50%;
+background-color: yellow;        
+}
+.gapv2 {
+width: 40%;    
+}
+button {
+height: 5vh;
+width: 10vh;    
+border-radius: 40%;
+border-color: rgb(10, 108, 108);
+background-color:rgb(10, 108, 108);
+color: white;
+padding: 3%;
+}

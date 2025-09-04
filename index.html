@@ -3,13 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
     <title>Dashbaord Project Odin Project</title>
 </head>
 <body>
- <div class="main grid">
-  <div class="header"></div>
+ <div class="main-grid">
+  <div class="header">
+    <div class="searchbar">
+        <form action="search">
+            <button class="search-submit" type="submit">
+                <img src="images/file-search-outline.svg" width="auto" height="auto" alt="search icon"> </button> <input type="text" value="searchbar" placeholder="Type Here">
+          
+        </form>
+        <div class="icons">
+            <img src="images/bell-alert.svg" width="auto" height="auto" alt="notifications">
+            <div class="gap"></div>
+            <img class="account-icon" src="images/ink-158614.svg" width="auto" height="auto" alt="account image">
+            <h3> Peyton Holmes </h3>
+        </div>
+    </div>    
+    <div class="userinfo" style="justify-content: flex-start; gap: 5px; margin-left: 20px;">
+       <img class="account-icon-v2" src="images/ink-158614.svg" width="auto" height="auto" alt="account image">
+       <div>
+            <h3> Hi Peyton</h3>
+            <h2> Peyton Holmes @holmespeyton</h2>
+       </div>
+       <div class="gapv2"></div>
+       <div class="buttons">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+       </div>
+    </div>
+  </div>
   <div class="sidebar"></div>
-  <div class="content grid"></div>  
+  <div class="content-grid"></div>  
  </div>   
     
 </body>
