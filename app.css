@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 .main-grid {
 display: grid;
-grid-template-columns: repeat(6, 1fr);
+grid-template-columns: repeat(2, 2fr) repeat(4, 1fr);
 grid-template-rows: 2fr 6fr;
 height: 100vh;
 }
@@ -84,7 +84,7 @@ border-radius: 50%;
 background-color: yellow;        
 }
 .gapv2 {
-width: 40%;    
+width: 30%;    
 }
 button {
 height: 5vh;
