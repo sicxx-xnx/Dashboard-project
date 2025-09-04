@@ -89,7 +89,7 @@ width: 40%;
 button {
 height: 5vh;
 width: 10vh;    
-border-radius: 40%;
+border-radius: 999px;
 border-color: rgb(10, 108, 108);
 background-color:rgb(10, 108, 108);
 color: white;
