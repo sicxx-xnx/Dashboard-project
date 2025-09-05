@@ -97,6 +97,7 @@ border-color: rgb(10, 108, 108);
 background-color:rgb(10, 108, 108);
 color: white;
 padding: 3%;
+cursor: pointer;
 }
 .top-sidebar{
 grid-row: 1 / 2 ; 
@@ -113,9 +114,24 @@ margin-left: 5%;
 font-size: 2rem;    
 }
 .middle-sidebar{
-grid-row: 3 /  span 3;
+grid-row: 3 /  span 4;
 display: flex;
 border: 1px red solid;
-align-items: center;    
+align-items: start;  
+gap: 2.5%;  
+flex-direction: column;
+justify-content: start;
+}
+li{
+list-style: none;
+/* display: flex;
+justify-content: start;
+align-items: flex-start; */
+cursor: pointer;
+margin-left: 10%;
+}
+li:hover{
+color: white;    
+
 }
 
