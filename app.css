@@ -3,6 +3,7 @@ margin: 0px;
 padding: 0px;
 box-sizing: border-box;    
 }
+p { font-size: .8rem;}
 .main-grid {
 display: grid;
 grid-template-columns: repeat(2, 2fr) repeat(4, 1fr);
@@ -100,8 +101,7 @@ padding: 3%;
 cursor: pointer;
 }
 .top-sidebar{
-grid-row: 1 / 2 ; 
-border: 1px red solid;  
+grid-row: 1 / 2 ;  
 display: flex; 
 align-items: center;
 gap: 5%;
@@ -156,4 +156,68 @@ margin-left: 5%;
 
 .bottom-sidebar h2:first-of-type{
 font-size: 1.5rem;     
+}
+
+
+.content-grid{
+/* display: grid;
+grid-template-columns: 60% 40%;
+grid-auto-flow: row;    */
+}
+.main-content{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(6, 1fr);
+grid-auto-columns: 50% 50%;
+grid-auto-rows: 50% 50%;
+row-gap: 5%;
+column-gap: 5%;;
+grid-auto-flow: row; 
+padding-left: 5%;  
+padding-top: 5%;
+padding-bottom: 5%;
+padding-right: 5%;
+}
+.content-grid-holder{
+background-color: white;
+border-radius: .3rem;
+overflow: hidden;
+
+}
+.content-grid-holder > div{
+height: 100%;
+border-left: yellow solid .2rem;
+width: 100%;    
+}
+
+.one {
+grid-row: 1 / 3;    
+}
+.two{grid-row: 3 / 5;}
+.three{ grid-row: 5 / 7;}
+.four{grid-row: 1 / 3;}
+.five{ grid-row: 3 / 5;}
+.six{grid-row: 5 / 7;}
+.seven {grid-row: 1 / 4;}
+.eight {grid-row: 4/7;}
+.text {  
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 100%;
+}
+div > div > div > div > h2 {
+font-size: .9rem;
+}
+.content-icon{
+display: flex;
+justify-content: end;    
+border-left: none;
+gap: 5%;
+/* margin-top: 14.8% */
+}
+.content-icon img{
+width: 1rem;    
 }
