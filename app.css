@@ -221,3 +221,14 @@ gap: 5%;
 .content-icon img{
 width: 1rem;    
 }
+.seven > div {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 5%;
+padding: 5%;    
+flex-direction: column;
+}
+.announcements{
+border-bottom: rgb(31, 31, 31) 1px solid   
+}
